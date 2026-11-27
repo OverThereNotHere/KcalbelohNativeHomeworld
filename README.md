@@ -1,6 +1,12 @@
 # Kcalbeloh Native Homeworld
 
-A ModuleManager patch for KSP 1 that lets Kopernicus load Kerbin directly in its orbit around Kerbol when Kerbol orbits Kcalbeloh. It moves the parent and any semimajor-axis override from `PostSpawnOrbit` into Kerbin’s regular `Orbit` node.
+## What's this about?
+
+Kcalbeloh’s `DistanceFactor = 0` mode puts the stock solar system in orbit around the Kcalbeloh black hole. The original setup moves Kerbin into its intended orbit after it spawns. Made with irritaion.
+
+## What does it do?
+
+This ModuleManager patch lets Kopernicus load Kerbin directly in its orbit around Kerbol. It moves the parent and any semimajor-axis override from `PostSpawnOrbit` into Kerbin’s regular `Orbit` node, then removes `PostSpawnOrbit`. The patch activates only in zero-distance mode with Home Switch off.
 
 ## Install
 
